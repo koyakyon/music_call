@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+h1 {
+    color: red;
+    font-family: fantasy;
+    font-size: 50px;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: fantasy;
+    font-size: 40px;
+}
+h3 {
+    color: rgb(0, 0, 0);
+    font-family: fantasy;
+    font-size: 30px;
+}
+p {
+    color: rgb(0, 26, 157);
+    font-family: fantasy;
+    font-size: 50px;
+ }
+
+.botan {
+    width:100px;
+    font-size:12px;
+    color:#FFFFFF;
+    text-align:center;
+    display:block;
+    padding:10px 0 10px;
+    background:#383a3b;
+    border-radius: 20px;
+    box-shadow:1px 1px #1A6EA0;
+}
+
+.botan:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+.content{
+    display: inline-block;
+    text-align:center;
+    width:100px;
+    font-size:12px;
+    color:#FFFFFF;
+    text-align:center;
+    padding:10px 0 10px;
+    background:#046393;
+    border-radius: 20px;
+    box-shadow:1px 1px #031017;
+}
+
+.back_ground{
+    margin: 0;
+    background-size:cover;
+    background-position:center;
+    background-image:linear-gradient(140deg, 
+      rgba(255, 255, 0, 0.333), 
+      rgba(255, 166, 0, 0.333) 20%, 
+      #e6840495 60%, 
+      rgba(255, 255, 0, 0.333)),url("https://pbs.twimg.com/media/EVEC9d8UwAMyw_s.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    animation: move 20s infinite both;
+}
+@keyframes move{
+  0% {
+    background-size:100% auto;
+  }
+  50% {
+    background-size:140% auto;
+  }
+  100% {
+    background-size:100% auto;
+  }
+}
+
+    </style>
+    <meta charset="utf-8" />
+    <title>自分で合いの手を打つ</title>
+
+</head>
+
+
+
+<body>
+    <div class="back_ground">
+        <h1>MUSIC</h1>
+        
+        <audio src="悲愴第二楽章.mp3" controls></audio>
+        <h1>
+            音が流れます。
+        </h1>
+        <h3>
+            流れる曲は著作権切れで個人的に一番好きな曲の悲愴第二楽章です。
+        </h3>
+        <h2>
+            周りの環境に配慮し小さな音からお試し下さい
+        </h2>
+        
+        <p>好きなタイミングで音を鳴らす⇩</p>
+
+    <div class="DJ">
+        <div class="content">
+            <div class="inner">
+                <input type="button" class="botan" onclick="play1();" value="シンバル">
+                <input type="button" class="botan" onclick="play2();" value="ハイタム">
+                <input type="button" class="botan" onclick="play3();" value="タム">
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="inner">
+                <input type="button" class="botan" onclick="play4();" value="ハイハット">
+                <input type="button" class="botan" onclick="play5();" value="スネア">
+                <input type="button" class="botan" onclick="play6();" value="バスドラ">
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="inner">
+                <input type="button" class="botan" onclick="play7();" value="手拍子">
+                <input type="button" class="botan" onclick="play8();" value="最初の歓声">
+                <input type="button" class="botan" onclick="play9();" value="Oh!">
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="inner">
+                <input type="button" class="botan" onclick="play10();" value="大歓声">
+                <input type="button" class="botan" onclick="play11();" value="同意">
+                <input type="button" class="botan" onclick="play12();" value="拍手">
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="inner">
+                <input type="button" class="botan" onclick="play13();" value="未定1">
+                <input type="button" class="botan" onclick="play14();" value="未定2">
+                <input type="button" class="botan" onclick="play15();" value="未定3">
+            </div>
+        </div>
+    </div>
+        
+    <div class="wav">
+        <audio id="シンバル" preload="auto">
+            <source src="シンバル1.wav" type="audio/wav">
+        </audio>
+        <audio id="ハイタム" preload="auto">
+            <source src="ハイタム1.wav" type="audio/wav">
+        </audio>
+        <audio id="タム" preload="auto">
+            <source src="タム1.wav" type="audio/wav">
+        </audio>
+        <audio id="ハイハット" preload="auto">
+            <source src="ハイハット1.wav" type="audio/mp3">
+        </audio>
+        <audio id="スネア" preload="auto">
+            <source src="スネア1.wav" type="audio/mp3">
+        </audio>
+        <audio id="バスドラ" preload="auto">
+            <source src="バスドラ1.wav" type="audio/mp3">
+        </audio>
+        
+        <audio id="手拍子" preload="auto">
+            <source src="手拍子1.wav" type="audio/wav">
+        </audio>
+        <audio id="最初の歓声" preload="auto">
+            <source src="最初の歓声.mp3" type="audio/wav">
+        </audio>
+        <audio id="Oh!" preload="auto">
+            <source src="Oh!1.wav" type="audio/wav">
+        </audio>
+        <audio id="大歓声" preload="auto">
+            <source src="大歓声.mp3" type="audio/mp3">
+        </audio>
+        <audio id="同意" preload="auto">
+            <source src="同意.mp3" type="audio/mp3">
+        </audio>
+        <audio id="拍手" preload="auto">
+            <source src="拍手.mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="未定1" preload="auto">
+            <source src=".mp3" type="audio/mp3">
+        </audio>
+        <audio id="未定2" preload="auto">
+            <source src=".mp3" type="audio/mp3">
+        </audio>
+        <audio id="未定3" preload="auto">
+            <source src=".mp3" type="audio/mp3">
+        </audio>
+    </div>
+        
+    <div class="play">
+        <script language="javascript" type="text/javascript">
+        function play1() {
+            document.getElementById("シンバル").play();
+        }
+        function play2() {
+            document.getElementById("ハイタム").play();
+        }
+        function play3() {
+            document.getElementById("タム").play();
+        }
+        function play4() {
+            document.getElementById("ハイハット").play();
+        }
+        function play5() {
+            document.getElementById("スネア").play();
+        }
+        function play6() {
+            document.getElementById("バスドラ").play();
+        }
+
+        function play7() {
+            document.getElementById("手拍子").play();
+        }
+        function play8() {
+            document.getElementById("最初の歓声").play();
+        }
+        function play9() {
+            document.getElementById("Oh!").play();
+        }
+        function play10() {
+            document.getElementById("大歓声").play();
+        }
+        function play11() {
+            document.getElementById("同意").play();
+        }
+        function play12() {
+            document.getElementById("拍手").play();
+        }
+        
+        function play13() {
+            document.getElementById("未定1").play();
+        }
+        function play14() {
+            document.getElementById("未定2").play();
+        }
+        function play15() {
+            document.getElementById("未定3").play();
+        }
+        
+        init();
+        
+        </script>
+    </div>
+
+</body>
+</html>
